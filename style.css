@@ -179,7 +179,8 @@ body {
     color: var(--gg-white) !important;
 }
 .dropdown-item:hover{
-  color: var(--gg-secondary) !important;
+  background-color: var(--gg-primary) !important;
+  color: var(--gg-white) !important;
 }
 /* Hero Section */
 .slider .carousel-item {

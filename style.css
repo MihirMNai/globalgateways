@@ -54,6 +54,32 @@ body {
 .pb-70 {
   padding-bottom: 70px;
 }
+/* Margin Top Css */
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+/* Margin Bottom Css */
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
 /* Navbar */
 /* .main-navbar {
   background-color: var(--gg-dark-gray);
@@ -267,7 +293,8 @@ body {
 .aboutus-sction {
   /* background-color: var(--gg-gray); */
 }
-.abt-img img {
+.abt-img img,
+.wcu-img img{
   width: 100%;
 }
 .gg-sction-subtitle h2 {
@@ -279,7 +306,7 @@ body {
   font-weight: 600;
 }
 .gg-sction-maintitle h2 {
-  font-size: 38px;
+  font-size: 36px;
   color: var(--gg-primary);
   font-weight: 700;
 }
@@ -422,6 +449,48 @@ body {
 .service-arrow-link:hover {
   background-color: var(--gg-secondary);
   color: var(--gg-white);
+}
+/* Why Choose US Section*/
+.wcu-lists ul{
+  padding-left: 0;
+}
+.wcu-lists ul li{
+  text-decoration: none;
+  list-style: none;
+}
+.wcu-list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--gg-gray);
+  padding-bottom: 5px;
+}
+.wcu-list-item:hover {
+  border-bottom: 1px solid var(--gg-dark-gray);
+}
+.wcu-list-content h3{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.wcu-list-icon {
+  font-size: 16px;
+  width: 30px;
+  display: inline-block;
+  color: var(--gg-white);
+  background: var(--gg-secondary);
+  height: auto;
+  line-height: 20px;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.wcu-list-item:hover .wcu-list-icon {
+  transform: translateX(5px);
+  background-color: var(--gg-primary);
+  transition: all 0.3s ease-in-out;
 }
 /* How It Works */
 .how-it-works {

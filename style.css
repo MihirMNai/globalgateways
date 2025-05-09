@@ -152,7 +152,7 @@ body {
   pointer-events: none;
   min-width: 220px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
-  background: #fff;
+  background: var(--gg-dark-gray);
   transition: all 0.4s ease;
   z-index: 4;
 }
@@ -166,10 +166,9 @@ body {
   visibility: visible;
 }
 .dropdown-item {
-    /* font-size: 16px !important; */
     text-transform: none !important;
     padding: 8px 15px;
-    border-top: 1px solid var(--gg-light-gray) !important;
+    border-top: 1px solid var(--gg-gray) !important;
     display: block;
     width: 100%;
     clear: both;
@@ -177,10 +176,10 @@ body {
     white-space: nowrap;
     background-color: transparent;
     border: 0;
+    color: var(--gg-white) !important;
 }
 .dropdown-item:hover{
-  background-color: var(--gg-primary);
-  color: var(--gg-white) !important;
+  color: var(--gg-secondary) !important;
 }
 /* Hero Section */
 .slider .carousel-item {

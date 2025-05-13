@@ -192,19 +192,19 @@ body {
   visibility: visible;
 }
 .dropdown-item {
-    text-transform: none !important;
-    padding: 8px 15px;
-    border-top: 1px solid var(--gg-gray) !important;
-    display: block;
-    width: 100%;
-    clear: both;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    color: var(--gg-white) !important;
+  text-transform: none !important;
+  padding: 8px 15px;
+  border-top: 1px solid var(--gg-gray) !important;
+  display: block;
+  width: 100%;
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  color: var(--gg-white) !important;
 }
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: var(--gg-primary) !important;
   color: var(--gg-white) !important;
 }
@@ -257,7 +257,8 @@ body {
   background-color: var(--gg-primary);
   transition: all 0.2s ease-in-out;
 }
-.style-btn a {
+.style-btn a,
+.style-btn button{
   color: var(--gg-white);
   background: var(--gg-secondary);
   text-decoration: none;
@@ -270,7 +271,8 @@ body {
   z-index: 1;
   display: inline-block;
 }
-.style-btn a::after {
+.style-btn a::after,
+.style-btn button::after {
   position: absolute;
   content: "";
   top: 0;
@@ -281,11 +283,14 @@ body {
   background: var(--gg-white);
   z-index: -1;
 }
-.style-btn a:hover {
+.style-btn a:hover,
+.style-btn button:hover
+{
   border: 2px solid var(--gg-secondary);
   color: var(--gg-secondary);
 }
-.style-btn a:hover::after {
+.style-btn a:hover::after,
+.style-btn button:hover::after {
   width: 100%;
   border-radius: 5px;
 }
@@ -294,7 +299,7 @@ body {
   /* background-color: var(--gg-gray); */
 }
 .abt-img img,
-.wcu-img img{
+.wcu-img img {
   width: 100%;
 }
 .gg-sction-subtitle h2 {
@@ -451,10 +456,10 @@ body {
   color: var(--gg-white);
 }
 /* Why Choose US Section*/
-.wcu-lists ul{
+.wcu-lists ul {
   padding-left: 0;
 }
-.wcu-lists ul li{
+.wcu-lists ul li {
   text-decoration: none;
   list-style: none;
 }
@@ -468,7 +473,7 @@ body {
 .wcu-list-item:hover {
   border-bottom: 1px solid var(--gg-dark-gray);
 }
-.wcu-list-content h3{
+.wcu-list-content h3 {
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -492,54 +497,33 @@ body {
   background-color: var(--gg-primary);
   transition: all 0.3s ease-in-out;
 }
-/* How It Works */
-.how-it-works {
-  padding: 60px 20px;
-  text-align: center;
-  background: #fff;
+/* Get In Touch Section */
+.git-sction {
+  background-image: url(./images/git/gitbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.steps {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.git-sction .gg-sction-subtitle h2{
+  color: var(--gg-primary);
 }
-.step {
-  max-width: 250px;
+.git-sction-form {
+  padding: 30px;
+  backdrop-filter: blur(2px);
+  background: rgb(255 255 255 / 30%);
 }
-
-/* Form Section */
-.form-section {
-  background-color: #e9ecef;
-  padding: 60px 20px;
-  text-align: center;
-}
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-input,
-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-button {
-  background: #0d6efd;
-  color: white;
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
   border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  height: 50px;
 }
-
-/* Footer */
-footer {
-  background-color: #0d6efd;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
+.form-group textarea {
+  height: 170px;
+}
+input:focus-visible, textarea:focus-visible {
+  outline: 1.8px solid var(--gg-secondary);
 }

@@ -258,7 +258,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .style-btn a,
-.style-btn button{
+.style-btn button {
   color: var(--gg-white);
   background: var(--gg-secondary);
   text-decoration: none;
@@ -284,8 +284,7 @@ body {
   z-index: -1;
 }
 .style-btn a:hover,
-.style-btn button:hover
-{
+.style-btn button:hover {
   border: 2px solid var(--gg-secondary);
   color: var(--gg-secondary);
 }
@@ -505,7 +504,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.git-sction .gg-sction-subtitle h2{
+.git-sction .gg-sction-subtitle h2 {
   color: var(--gg-primary);
 }
 .git-sction-form {
@@ -513,7 +512,9 @@ body {
   backdrop-filter: blur(2px);
   background: rgb(255 255 255 / 30%);
 }
-.form-group input, .form-group textarea, .form-group select {
+.form-group input,
+.form-group textarea,
+.form-group select {
   width: 100%;
   margin-bottom: 10px;
   padding: 10px 10px 10px 20px;
@@ -524,6 +525,58 @@ body {
 .form-group textarea {
   height: 170px;
 }
-input:focus-visible, textarea:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
   outline: 1.8px solid var(--gg-secondary);
+}
+/* Testimonial Section */
+.testimonial-sction {
+  background-color: var(--gg-secondary);
+}
+.testimonial-sction .gg-sction-subtitle h2,
+.testimonial-sction .gg-sction-maintitle h2 {
+  color: var(--gg-white);
+}
+.testi-content {
+  background-color: var(--gg-primary);
+  padding: 30px 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--gg-white);
+}
+.testi-profile {
+  display: inline-flex;
+  align-items: center;
+}
+.testi-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.testi-icon img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.testi-name h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.testi-country h4{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* .swiper-button-prev::after, 
+.swiper-button-next::after{
+  font-size: 20px;
+  color: white;
+}
+.swiper-button-prev {
+  left: 5px;
+}
+.swiper-button-next {
+  right: 5px;
+} */
+.swiper-pagination-bullet-active{
+  background: var(--gg-secondary);
 }

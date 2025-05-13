@@ -45,3 +45,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// Swiper Slider
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".testimonial-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 4000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});

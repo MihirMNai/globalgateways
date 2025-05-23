@@ -1,15 +1,15 @@
 window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".main-navbar");
-  
-    if (window.scrollY > 200) {
-      if (!navbar.classList.contains("sticky-active")) {
-        navbar.classList.add("sticky-active");
-      }
-    } else {
-      navbar.classList.remove("sticky-active");
+  const navbar = document.querySelector(".main-navbar");
+
+  if (window.scrollY > 200) {
+    if (!navbar.classList.contains("sticky-active")) {
+      navbar.classList.add("sticky-active");
     }
-  });
- 
+  } else {
+    navbar.classList.remove("sticky-active");
+  }
+});
+
 // Get In Touch Form Submission Code
 // Initialize EmailJS
 document.addEventListener("DOMContentLoaded", function () {
@@ -31,18 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Send email via EmailJS
-    emailjs.send("service_byedadc", "template_urj4ubh", formData)
-      .then(function () {
+    emailjs.send("service_byedadc", "template_urj4ubh", formData).then(
+      function () {
         status.style.display = "block";
         status.textContent = "Message sent successfully!";
         status.style.color = "green";
         form.reset();
-      }, function (error) {
+      },
+      function (error) {
         status.style.display = "block";
         status.textContent = "Failed to send message.";
         status.style.color = "red";
         console.error("EmailJS error:", error);
-      });
+      }
+    );
   });
 });
 
@@ -64,4 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+});
+
+// Back To Top Button
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.remove("hidden");
+  } else {
+    backToTop.classList.add("hidden");
+  }
 });

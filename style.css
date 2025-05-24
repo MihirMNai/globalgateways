@@ -298,6 +298,9 @@ body {
   border-radius: 5px;
 }
 /* About Us */
+h1.noh1 {
+  display: none;
+}
 .aboutus-sction {
   /* background-color: var(--gg-gray); */
 }
@@ -658,6 +661,7 @@ textarea:focus-visible {
   padding: 25px;
   background-color: #333;
   opacity: 0.8;
+  overflow: hidden;
 }
 .ff-label h3 {
   text-align: center;
@@ -777,31 +781,31 @@ footer {
   list-style: none;
   margin-bottom: 5px;
 }
-.f-menu-links li a:hover{
+.f-menu-links li a:hover {
   color: var(--gg-secondary);
   transition: 0.3s;
 }
-.f-menu-links li a{
+.f-menu-links li a {
   color: white;
   text-decoration: none;
 }
-.footer-contact-list svg{
+.footer-contact-list svg {
   margin-right: 10px;
 }
-.footer-contact-list a{
+.footer-contact-list a {
   color: var(--gg-white);
   text-decoration: none;
 }
 .footer-contact-list li:hover,
-.footer-contact-list li:hover a{
-  color: var(--gg-secondary); 
+.footer-contact-list li:hover a {
+  color: var(--gg-secondary);
   transition: 0.3s;
 }
-.footer-contact-social{
+.footer-contact-social {
   display: flex;
   gap: 10px;
 }
-.footer-contact-social a{
+.footer-contact-social a {
   width: 40px;
   height: 40px;
   color: var(--gg-secondary);
@@ -812,27 +816,27 @@ footer {
   justify-content: space-around;
   transition: 0.3s ease-out;
 }
-.footer-contacts-item{
+.footer-contacts-item {
   margin-bottom: 30px;
 }
-.footer-contact-social a:hover{
+.footer-contact-social a:hover {
   transform: translateY(6px);
   transition: 0.3s ease-out;
   background-color: var(--gg-secondary);
   color: var(--gg-white);
 }
-.footer-bottom{
+.footer-bottom {
   border-top: 1px solid var(--gg-white);
   padding: 10px 0;
   margin-top: 20px;
 }
-.footer-bottom p{
+.footer-bottom p {
   margin-bottom: 0;
 }
-.fbottom-right p{
+.fbottom-right p {
   text-align: right;
 }
-.fbottom-right p a{
+.fbottom-right p a {
   color: var(--gg-white);
   text-decoration: none;
 }
@@ -842,25 +846,25 @@ footer {
 /* Shared Button Styles */
 .back-to-top,
 .whatsapp-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    text-decoration: none;
-    z-index: 9999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, opacity 0.3s;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
 /* Back to Top Specific */
 .back-to-top {
-    background-color: var(--gg-secondary);
-    bottom: 90px;
-    right: 30px;
-    font-size: 24px;
+  background-color: var(--gg-secondary);
+  bottom: 90px;
+  right: 30px;
+  font-size: 24px;
 }
 .back-to-top.hidden {
   opacity: 0;
@@ -868,32 +872,196 @@ footer {
   transition: opacity 0.3s ease;
 }
 .back-to-top:hover {
-    background-color: var(--gg-primary);
-    color: var(--gg-white);
+  background-color: var(--gg-primary);
+  color: var(--gg-white);
 }
 
 /* WhatsApp Button Specific */
 .whatsapp-button {
-    background-color: #25D366;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #25d366;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe57;
+  background-color: #1ebe57;
 }
 
 .whatsapp-button img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 /* Optional hidden class for scroll effect */
 .back-to-top.hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
+/* About Us Page */
+.breadcrumb-sction {
+  padding: 70px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-sction.abtbg {
+  background-image: url(./images/aboutus/abt-breadrumb.jpg);
+}
+.breadcrumb-sction::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.70196) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.8;
+  z-index: -1;
+}
+.breadcrumb-title h2 {
+  color: var(--gg-white);
+  font-size: 40px;
+  font-weight: 600;
+}
+.breadcrumb-menu ul {
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.breadcrumb-menu-items li {
+  list-style: none;
+  position: relative;
+}
+.breadcrumb-menu-items li span svg {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.breadcrumb-menu-items li span {
+  color: var(--gg-secondary);
+  font-size: 18px;
+  font-weight: 600;
+}
+.breadcrumb-menu-items li span a {
+  color: var(--gg-white);
+  text-decoration: none;
+}
+
+/* About Us Page Section  */
+.abt-pg-sction {
+  padding: 70px 0;
+}
+/* Mission Vision Section */
+.mv-sction {
+  padding: 70px 0;
+  background-color: var(--gg-dark-gray);
+}
+.mv-card {
+}
+.mv-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 16px;
+  z-index: 1;
+  color: #fff;
+  background: var(--gg-primary);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Outer animated border */
+.mv-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* background: linear-gradient(45deg, #ff00c8, #6aff00, #00f0ff, #ff00c8); */
+  /* background: linear-gradient(45deg, #054954ff, #46a8bdff, #054954ff); */
+  background: linear-gradient(
+    45deg,
+    #ff6ec4,
+    #7873f5,
+    #4ade80,
+    #22d3ee,
+    #facc15,
+    #ff6ec4
+  );
+  animation: rotate-border 3s linear infinite;
+  z-index: 0;
+}
+
+/* Inner content box */
+.mv-card::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: var(--gg-primary);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.mv-title,
+.mv-content {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mv-title h3 {
+  font-size: 32px;
+}
+.mv-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+/* our team section */
+.our-team-sction {
+  padding: 70px 0;
+}
+.our-team-box {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  border-radius: 10px;
+}
+.our-team-box:hover {
+  background-color: var(--gg-secondary);
+  transition: all 0.5s ease-in-out;
+}
+.our-team-box:hover .our-team-title,
+.our-team-box:hover .our-team-title h4 {
+  color: var(--gg-white);
+}
+.our-team-img {
+  margin-bottom: 14px;
+}
+.our-team-title h3 {
+  font-size: 24px;
+}
+.our-team-title h4 {
+  font-size: 22px;
+  margin-bottom: 0;
+  color: var(--gg-secondary);
+}

@@ -911,7 +911,7 @@ footer {
   z-index: 1;
 }
 .breadcrumb-sction.abtbg {
-  background-image: url(./images/aboutus/abt-breadrumb.jpg);
+  background-image: url(./images/breadcrumbbg/abt-breadrumb.jpg);
 }
 .breadcrumb-sction::before {
   position: absolute;
@@ -1043,7 +1043,7 @@ footer {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 25px;
   text-align: center;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 10px;
 }
 .our-team-box:hover {
@@ -1058,10 +1058,203 @@ footer {
   margin-bottom: 14px;
 }
 .our-team-title h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 .our-team-title h4 {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 0;
   color: var(--gg-secondary);
+  text-transform: uppercase;
+}
+/* Student visa Section */
+.breadcrumb-sction.svbg {
+  background-image: url(./images/breadcrumbbg/sv-breadcrumb.jpg);
+}
+.service-area-sction {
+  padding: 70px 0;
+}
+.service-subpage-title h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.service-subpage-image img {
+  width: 100%;
+  height: auto;
+}
+.service-subpage-text {
+  margin-top: 15px;
+}
+.service-subpage-text p {
+  font-size: 18px;
+}
+.service-sidebar {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.service-sidebar-box {
+  padding: 20px;
+}
+.service-sidebar-title {
+  border-bottom: 2px solid #46a8bd;
+  margin-bottom: 20px;
+}
+.service-sidebar-title h4 {
+  font-size: 26px;
+}
+.service-sidebar-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.service-sidebar-list li {
+  list-style: none;
+  padding: 10px;
+  background-color: var(--gg-light-gray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.service-sidebar-list li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--gg-secondary); /* your highlight color */
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+/* On hover: expand the square to cover the entire li */
+.service-sidebar-list li:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure content stays above the animated background */
+.service-sidebar-list li > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Text color changes for contrast */
+.service-sidebar-list li:hover a,
+.service-sidebar-list li:hover span {
+  color: var(--gg-white);
+}
+
+.service-sidebar-list li a {
+  text-decoration: none;
+  color: black;
+}
+.service-sidebar-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.service-sidebar-bottom {
+  background-color: var(--gg-secondary);
+  padding: 35px 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.ssb-title{
+  margin-bottom: 20px;
+}
+.ssb-title h4 {
+  color: var(--gg-white);
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.ssb-call-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ssb-call-text svg{
+  color: var(--gg-white);
+  padding: 15px;
+  background-color: var(--gg-primary);
+  font-size: 22px;
+}
+.ssb-call-text a{
+  color: var(--gg-white);
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Success Section */
+.breadcrumb-sction.successbg{
+  background-image: url(./images/breadcrumbbg/successbg.jpg);
+}
+.success-sction{
+  padding: 70px 0 40px;
+}
+.success-box {
+  box-shadow: 0px 0px 4px 4px var(--gg-secondary);
+  background-color: var(--gg-secondary);
+  padding: 20px;
+  text-align: center;
+  color: var(--gg-white);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  margin-bottom: 30px;
+}
+.success-box::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--gg-primary); /* your highlight color */
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+.success-box::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--gg-primary); /* your highlight color */
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+.success-box:hover{
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 4px 4px var(--gg-primary);
+}
+.success-box:hover::before,
+.success-box:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.success-box:hover > *{
+  position: relative;
+  z-index: 1;
+}
+.success-img {
+  margin-bottom: 15px;
+}
+.success-img img {
+  width: 120px;
+  height: auto;
+}
+.success-title h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.success-text p {
+  margin-bottom: 0;
 }

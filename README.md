@@ -1,2 +1,0 @@
-# globalgateways
-Global Gateways Website
